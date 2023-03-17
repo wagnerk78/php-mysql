@@ -24,7 +24,7 @@
     <br>
     <?php
     include_once("conexao.php");
-    $sql = "select * from tbprodutos order by nmProduto";
+    $sql = "select * from tbprodutos order by idProduto";
     $dadosProdutos = $conn->query($sql);
     if ($dadosProdutos->num_rows > 0) {
     ?>
